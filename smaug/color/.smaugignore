@@ -1,0 +1,3 @@
+example/smaug/
+tmp/
+.gitlab-ci.yml

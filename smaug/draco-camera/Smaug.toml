@@ -1,0 +1,44 @@
+[package]
+name = "draco-camera"
+authors = ["Logan Koester <logan@logankoester.com>"]
+version = "0.1.0"
+homepage = "https://smaug.dev/packages/draco-camera"
+keywords = []
+
+# Optional:
+# documentation = "https://example.com"
+repository = "http://github.com/ereborstudios/draco-camera"
+
+# Which files do you want to be automatically required from your package.
+# requires = ["lib/library.rb"]
+
+requires = [
+  "smaug/draco-camera/lib/draco_camera.rb",
+  "app/components/camera/index.rb",
+  "app/entities/camera/index.rb",
+  "app/systems/camera/index.rb",
+]
+
+
+[package.installs]
+# Example
+#
+# <from> = <to>
+# "lib/library.rb" = "app/lib/library.rb"
+"templates/app/components/camera_target.rb" = "app/components/camera/camera_target.rb"
+"templates/app/components/camera_shake.rb" = "app/components/camera/camera_shake.rb"
+"templates/app/components/zoom.rb" = "app/components/camera/zoom.rb"
+"templates/app/components/zoomable.rb" = "app/components/camera/zoomable.rb"
+"templates/app/components/index.rb" = "app/components/camera/index.rb"
+
+"templates/app/entities/simple_camera.rb" = "app/entities/camera/simple_camera.rb"
+"templates/app/entities/index.rb" = "app/entities/camera/index.rb"
+
+"templates/app/systems/control_camera.rb" = "app/systems/camera/control_camera.rb"
+"templates/app/systems/shake_camera.rb" = "app/systems/camera/shake_camera.rb"
+"templates/app/systems/update_zoom.rb" = "app/systems/camera/update_zoom.rb"
+"templates/app/systems/index.rb" = "app/systems/camera/index.rb"
+
+[dragonruby]
+version = "2"
+edition = "standard"
